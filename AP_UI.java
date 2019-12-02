@@ -79,6 +79,18 @@ public class AP_UI extends MenuControl {
 				testQuestionAnswer.setText(q.getAnswer());
 			}
 		});
+		/*
+		JButton btnPower = new JButton("Power");
+		btnBinaryMath.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
+		btnBinaryMath.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AP_Exam.Question q = new AP_Exam.Power();
+				testQuestion.setText(q.getQuestion());
+				testChoices.setText(q.getChoices());
+				testQuestionAnswer.setText(q.getAnswer());
+			}
+		});
+		*/
 		btnBinaryMath.setBounds(107, 21, 61, 29);
 		contentPane.add(btnBinaryMath);
 		
@@ -93,6 +105,11 @@ public class AP_UI extends MenuControl {
 		btnConsole.setBackground(Color.LIGHT_GRAY);
 		btnConsole.setBounds(406, 21, 21, 18);
 		contentPane.add(btnConsole);
+		
+		JButton btnPower = new JButton("Power");
+		btnPower.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
+		btnPower.setBounds(16, 50, 109, 51);
+		contentPane.add(btnPower);
 		
 		testQuestion.setEditable(false);
 		testQuestion.setLineWrap(true);
