@@ -114,7 +114,7 @@ public class AP_UI extends MenuControl {
 		contentPane.add(testQuestionAnswer);
 		
 		JButton btnLucyandcynthia = new JButton("LucyandCynthia");
-		btnLucyandcynthia.setBounds(165, 21, 138, 29);
+		btnLucyandcynthia.setBounds(172, 18, 138, 29);
 		contentPane.add(btnLucyandcynthia);
 	
 	}
