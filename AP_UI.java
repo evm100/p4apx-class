@@ -44,6 +44,7 @@ public class AP_UI extends MenuControl {
 		contentPane.add(lblExamSections);
 		
 		JButton btnMath = new JButton("Math");
+		btnMath.setFont(new Font("Lucida Grande", Font.PLAIN, 5));
 		btnMath.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AP_Exam.Question q = new AP_Exam.MathQuestions();
@@ -52,10 +53,11 @@ public class AP_UI extends MenuControl {
 				testQuestionAnswer.setText(q.getAnswer());
 			}
 		});
-		btnMath.setBounds(59, 21, 75, 29);
+		btnMath.setBounds(16, 21, 40, 29);
 		contentPane.add(btnMath);
 		
 		JButton btnDataTypes = new JButton("Data Types");
+		btnDataTypes.setFont(new Font("Lucida Grande", Font.PLAIN, 5));
 		btnDataTypes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AP_Exam.Question q = new AP_Exam.DataTypeQuestions();
@@ -64,10 +66,11 @@ public class AP_UI extends MenuControl {
 				testQuestionAnswer.setText(q.getAnswer());
 			}
 		});
-		btnDataTypes.setBounds(131, 21, 131, 29);
+		btnDataTypes.setBounds(51, 21, 61, 29);
 		contentPane.add(btnDataTypes);
 		
 		JButton btnBinaryMath = new JButton("Binary Math");
+		btnBinaryMath.setFont(new Font("Lucida Grande", Font.PLAIN, 5));
 		btnBinaryMath.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AP_Exam.Question q = new AP_Exam.BinaryMathQuestions();
@@ -76,7 +79,7 @@ public class AP_UI extends MenuControl {
 				testQuestionAnswer.setText(q.getAnswer());
 			}
 		});
-		btnBinaryMath.setBounds(260, 21, 117, 29);
+		btnBinaryMath.setBounds(107, 21, 61, 29);
 		contentPane.add(btnBinaryMath);
 		
 		JButton btnConsole = new JButton("C");
@@ -109,6 +112,10 @@ public class AP_UI extends MenuControl {
 		testQuestionAnswer.setLineWrap(true);
 		testQuestionAnswer.setBounds(74, 211, 357, 39);
 		contentPane.add(testQuestionAnswer);
+		
+		JButton btnLucyandcynthia = new JButton("LucyandCynthia");
+		btnLucyandcynthia.setBounds(167, 21, 138, 29);
+		contentPane.add(btnLucyandcynthia);
 	
 	}
 }
