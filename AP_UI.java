@@ -112,7 +112,7 @@ public class AP_UI extends MenuControl {
 		
 		JButton btnPower = new JButton("Power");
 		btnPower.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
-		btnPower.setBounds(16, 50, 109, 51);
+		btnPower.setBounds(456, 133, 109, 51);
 		contentPane.add(btnPower);
 		
 		testQuestion.setEditable(false);
@@ -141,6 +141,10 @@ public class AP_UI extends MenuControl {
 		JButton btnMVC = new JButton("MVC");
 		btnMVC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				AP_Exam.Question q = new AP_Exam.MVCQuestion();
+				testQuestion.setText(q.getQuestion());
+				testChoices.setText(q.getChoices());
+				testQuestionAnswer.setText(q.getAnswer());
 			}
 		});
 		btnMVC.setBounds(446, 92, 138, 29);
