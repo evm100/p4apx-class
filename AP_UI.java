@@ -114,7 +114,13 @@ public class AP_UI extends MenuControl {
 		contentPane.add(testQuestionAnswer);
 		
 		JButton btnLucyandcynthia = new JButton("LucyandCynthia");
-		btnLucyandcynthia.setBounds(446, 57, 138, 29);
+		btnLucyandcynthia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		});
+		btnLucyandcynthia.setFont(new Font("Lucida Grande", Font.PLAIN, 22));
+		btnLucyandcynthia.setBounds(446, 48, 188, 39);
 		contentPane.add(btnLucyandcynthia);
 		
 		JButton btnMVC = new JButton("MVC");
