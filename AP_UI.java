@@ -141,7 +141,7 @@ public class AP_UI extends MenuControl {
 			}
 		});
 		btnLucyandcynthia.setFont(new Font("Lucida Grande", Font.PLAIN, 22));
-		btnLucyandcynthia.setBounds(446, 48, 188, 39);
+		btnLucyandcynthia.setBounds(451, 50, 188, 39);
 		contentPane.add(btnLucyandcynthia);
 		
 		JButton btnMVC = new JButton("MVC");
